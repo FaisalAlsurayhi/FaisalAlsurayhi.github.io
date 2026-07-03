@@ -126,7 +126,9 @@ h1 em, h2 em { color: var(--blue); font-style: normal; }
 .contact { padding: 110px 0; color: var(--white); background: var(--blue); }
 .contact h2 { font-size: clamp(46px, 6vw, 82px); }
 .contact-links { display: flex; gap: 14px; margin-top: 45px; }
-.contact-links a { padding: 14px 18px; color: var(--navy); background: var(--white); border-radius: 3px; font-weight: 700; }
+.contact-links a { min-height: 48px; display: inline-flex; align-items: center; gap: 9px; padding: 12px 17px; color: var(--navy); background: var(--white); border-radius: 3px; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease; }
+.contact-links a:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,21,38,.16); }
+.contact-links svg { width: 19px; height: 19px; flex: 0 0 auto; fill: currentColor; }
 footer { color: #9ba6b5; background: var(--navy); }
 .footer-inner { min-height: 110px; display: flex; align-items: center; justify-content: space-between; font-size: 12px; }
 
