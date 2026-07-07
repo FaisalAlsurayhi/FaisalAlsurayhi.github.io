@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <div class="site-glow glow-one" aria-hidden="true"></div>
@@ -50,17 +50,17 @@
         </div>
 
         <div class="hero-panel reveal" aria-label="Profile summary">
-          <figure class="portrait-card">
-            <img src="assets/faisal-alsurayhi.png" alt="Portrait of Faisal Alsurayhi">
-          </figure>
-          <div class="terminal-card">
+          <article class="profile-card">
+            <figure class="portrait-card">
+              <img src="assets/faisal-alsurayhi.png?v=2" alt="">
+            </figure>
             <p class="terminal-label">profile.status</p>
             <code>
               <span>role:</span> Business Data Analyst<br>
               <span>tools:</span> Power BI · SQL · Python · Excel<br>
               <span>focus:</span> BI, retention, operations, people analytics
             </code>
-          </div>
+          </article>
         </div>
       </div>
 
@@ -88,20 +88,27 @@
       <div class="project-stack">
         <article class="project-card featured reveal">
           <div class="card-index">01</div>
+          <div class="project-media viz-rfm" aria-label="RFM project preview">
+            <div class="media-top"><span>RFM</span><strong>805K+</strong></div>
+            <div class="donut-chart"><span>68.4%</span></div>
+            <p>Top customer segment revenue</p>
+          </div>
           <div class="project-content">
             <p class="project-type">Customer analytics · RFM segmentation</p>
             <h3>Finding the customers that drive disproportionate value</h3>
             <p>Analyzed 805K+ retail transactions and built an RFM segmentation model showing that 22.1% of customers generated 68.4% of revenue.</p>
             <div class="tags"><span>Python</span><span>RFM</span><span>Customer Strategy</span></div>
           </div>
-          <div class="data-viz">
-            <span>68.4%</span>
-            <small>Revenue from top segment</small>
-          </div>
         </article>
 
         <article class="project-card reveal">
           <div class="card-index">02</div>
+          <div class="project-media viz-churn" aria-label="Churn project preview">
+            <div class="media-top"><span>CHURN</span><strong>CLV</strong></div>
+            <div class="threshold-line"><i style="left: 28%"></i><i style="left: 58%"></i><i style="left: 78%"></i></div>
+            <div class="bars"><span style="height: 45%"></span><span style="height: 72%"></span><span style="height: 58%"></span><span style="height: 86%"></span></div>
+            <p>Cost-aware retention threshold</p>
+          </div>
           <div class="project-content">
             <p class="project-type">Predictive analytics · Retention economics</p>
             <h3>Choosing a churn threshold with business costs</h3>
@@ -112,6 +119,11 @@
 
         <article class="project-card reveal">
           <div class="card-index">03</div>
+          <div class="project-media viz-realestate" aria-label="Real estate project preview">
+            <div class="media-top"><span>REAL ESTATE</span><strong>SQM</strong></div>
+            <div class="map-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p>Eastern Province market dashboard</p>
+          </div>
           <div class="project-content">
             <p class="project-type">Market intelligence · Power BI</p>
             <h3>Eastern Province real-estate market intelligence</h3>
@@ -122,6 +134,11 @@
 
         <article class="project-card reveal">
           <div class="card-index">04</div>
+          <div class="project-media viz-workforce" aria-label="Workforce project preview">
+            <div class="media-top"><span>NITAQAT</span><strong>SQL</strong></div>
+            <div class="people-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p>Saudization compliance analysis</p>
+          </div>
           <div class="project-content">
             <p class="project-type">Workforce economics · SQL & Python</p>
             <h3>Saudi Nitaqat workforce analytics</h3>
@@ -132,6 +149,11 @@
 
         <article class="project-card reveal">
           <div class="card-index">05</div>
+          <div class="project-media viz-banking" aria-label="Banking project preview">
+            <div class="media-top"><span>BANKING</span><strong>KPI</strong></div>
+            <div class="line-chart"><i></i></div>
+            <p>Profitability and asset-quality KPIs</p>
+          </div>
           <div class="project-content">
             <p class="project-type">Financial analytics · SQL & Excel</p>
             <h3>Saudi banking-sector KPI analysis</h3>
@@ -257,6 +279,6 @@
       <p>Built for clarity, evidence, and impact.</p>
     </div>
   </footer>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
