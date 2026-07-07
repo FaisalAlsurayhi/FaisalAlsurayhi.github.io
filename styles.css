@@ -306,7 +306,7 @@ a { color: inherit; text-decoration: none; }
 }
 .project-card {
   display: grid;
-  grid-template-columns: 86px 300px minmax(0, 1fr);
+  grid-template-columns: 86px minmax(360px, 420px) minmax(0, 1fr);
   gap: 28px;
   padding: 34px 0;
   align-items: center;
@@ -316,7 +316,7 @@ a { color: inherit; text-decoration: none; }
   transition: border-color .2s ease, transform .2s ease;
 }
 .project-card.featured {
-  grid-template-columns: 86px 340px minmax(0, 1fr);
+  grid-template-columns: 86px minmax(380px, 440px) minmax(0, 1fr);
 }
 .project-card:hover {
   border-color: var(--line-strong);
@@ -348,7 +348,7 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 22px;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9.5;
   background: rgba(255,255,255,.025);
 }
 .project-media::after {
@@ -587,7 +587,7 @@ footer {
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-@media (max-width: 960px) {
+  @media (max-width: 960px) {
   .hero-inner,
   .split,
   .about-grid {
